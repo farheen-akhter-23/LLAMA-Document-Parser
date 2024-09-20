@@ -9,7 +9,7 @@ api_key = os.getenv("LLAMA_CLOUD_API_KEY")
 if not api_key:
     raise ValueError("API key not found. Make sure LLAMA_CLOUD_API_KEY is set in your environment.")
 
-# Initialize LlamaParse
+# Initialize LlamaParse with api key
 parser = LlamaParse(api_key=api_key, result_type="markdown")
 
 # Parse the PDF document
